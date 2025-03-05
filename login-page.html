@@ -1,1 +1,32 @@
-<div id="container-tela-centralizar"><div id="tela-login-container"></div></div> 
+<div id="container-tela-centralizar">
+    <div id="tela-login-container">
+        <button class="sair" onclick="exitLogin()">X</button>
+        <form onsubmit="RequisitLogin(event)" action="">
+            <h1>Login</h1>
+            <div id="caixaA" class="txtb">
+                <input class="input-txt-lgn" type="text" placeholder="@gmail.com" name="email" required>
+                <span data-placeholder="Email"></span>
+            </div>
+            <div id="caixaB" class="txtb">
+                <input class="input-txt-lgn" type="password" placeholder="***************" name="senha" required>
+                <span data-placeholder="Senha"></span>
+            </div>
+
+            <div id="caixaDeErro" class="tabNot">
+            <div id="notifyErro">
+                <ul>
+                    <li id="emailError" class="error-message" ></li>
+                    <li id="passwordError" class="error-message" ></li>
+                </ul>
+            </div>
+            </div>
+            
+            <div class="paramButton" >
+            <button class="logbtn" type="submit" value="Login">LOGAR</button>
+            </div>
+            <span class="para-cadastro">
+                Não tem uma conta? <a href="cadastro">Cadastre-se</a>
+            </span>
+        </form>
+    </div>
+</div>
